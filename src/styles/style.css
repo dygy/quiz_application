@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(102, 35, 35);
+  margin: 0;
+  max-height: 100vh;
+}
+body .container {
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+body .container .element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+  width: 100px;
+  background-color: antiquewhite;
+  border-radius: 30px;
+}
+body .container .element p {
+  margin: 0;
+}
+body .container .element .box {
+  width: 100%;
+  padding-top: 100%;
+  background-color: black;
+}
+
+body .navbar {
+  width: 100vw;
+  height: 5vh;
+  background-color: black;
+}
+body .footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+}
