@@ -6,13 +6,9 @@ class Container extends Component {
     return (
       <>
         <div className={"container"}>
-          {this.data.map(function (name, index) {
-            return (
-              <Element key={index} title={name}>
-                {" "}
-              </Element>
-            );
-          })}{" "}
+          {this.data.map((name, index) => {
+            return <Element key={index} title={name}></Element>;
+          })}
         </div>
       </>
     );
