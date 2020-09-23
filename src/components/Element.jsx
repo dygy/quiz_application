@@ -8,11 +8,10 @@ class Element extends Component {
     this.setState({ top: `${top}px`, transform: `rotateY(${top}deg)` });
   };
   render() {
-    console.log(this);
     return (
       <div
         style={{ top: this.state.top, transform: this.state.transform }}
-        id={this.props.key}
+        id={this.props.id}
         onClick={this.props.clickFunction}
         className={"element"}
       >
