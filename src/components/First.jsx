@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import Container from "./Container";
+import Footer from "./Footer.jsx";
+import Navbar from "./Navbar.jsx";
+import Container from "./Container.jsx";
 class First extends Component {
   render() {
     return (

@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/style.css";
-//import App from '.comps/App';
-import First from "./components/First";
+import First from "./components/First.jsx";
 import * as serviceWorker from "./serviceWorker";
 ReactDOM.render(<First />, document.getElementById("root"));
 
