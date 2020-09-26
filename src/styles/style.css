@@ -4,7 +4,7 @@ body {
   max-height: 100vh;
   overflow: hidden;
 }
-body .container {
+body #root .container {
   z-index: 0;
   height: 80vh;
   display: flex;
@@ -13,7 +13,7 @@ body .container {
   justify-content: space-around;
   align-content: center;
 }
-body .container .element {
+body #root .container .element {
   z-index: 0;
   position: relative;
   display: flex;
@@ -25,10 +25,10 @@ body .container .element {
   background-color: antiquewhite;
   border-radius: 30px;
 }
-body .container .element p {
+body #root .container .element p {
   margin: 0;
 }
-body .container .element .box {
+body #root .container .element .box {
   width: 100%;
   padding-top: 100%;
   background-color: #ee1c1c;
@@ -38,13 +38,13 @@ body h1 {
   color: wheat;
   height: 5vh;
 }
-body .navbar {
+.navbar {
   z-index: 2;
   width: 100vw;
   height: 5vh;
   background-color: black;
 }
-body .footer {
+.footer {
   z-index: 2;
   width: 100vw;
   height: 10vh;

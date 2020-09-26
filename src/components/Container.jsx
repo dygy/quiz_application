@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Element from "./Element.jsx";
 import data from "../data/questions.json";
 
-const ReactDOM = require("react-dom");
 class Container extends Component {
   state = {
     renderChildes: true,
