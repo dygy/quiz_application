@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --hot --open",
     "buildWebPack": "webpack",
-    "pretty": "prettier -w src",
+    "prettyReact": "prettier -w src",
+    "prettyAPI": "prettier -w api",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,18 +1,31 @@
 import React, { Component } from "react";
 import Element from "./Element.jsx";
 import data from "../data/questions.json";
-
+console.log(json);
+let json;
+fetch(`${window.location.href.replace("quest", "data")}`)
+  .then((value) => {
+    return value.json();
+  })
+  .then((value) => {
+    json = value;
+  })
+  .catch((error) => {
+    console.error(error);
+    json = undefined;
+  });
+console.log(json);
 class Container extends Component {
   state = {
     renderChildes: true,
     finish: false,
   };
   current = 0;
-  data = data;
+  data = json ? json : data;
   childes = [];
   level = 0;
   moveDown = (index) => {
-    this.level -= 10;
+    this.level -= 15;
     this.childes.forEach((elem, i) => {
       if (elem.current) {
         elem.current.move(index === i ? this.level * -1 : this.level);
@@ -37,7 +50,9 @@ class Container extends Component {
       this.level = 0;
       this.setState({ renderChildes: true });
     } else {
+      window.postMessage(JSON.stringify(sessionStorage), window.location.href);
       this.setState({ finish: true });
+      sessionStorage.clear();
     }
   };
   render() {
