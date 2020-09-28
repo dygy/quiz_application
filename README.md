@@ -1,6 +1,6 @@
 # react-sample
 
-* send POST request to origin with this object
+* send POST request to origin with this object  
 `{
   questions": [
     {
