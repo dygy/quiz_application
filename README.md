@@ -1,8 +1,8 @@
 # react-sample
 
 * send POST request to origin with this object
-{
-  "questions": [
+`{
+  questions": [
     {
       "title": "title of first question",
       "answers": [
@@ -24,7 +24,7 @@
       ]
     },
   ]
-}
+}`
 * in response you will get endpoint to your test 
 * open iframe with it on your page
 * at the end of quiz, iframe will send event message with answers of your user
