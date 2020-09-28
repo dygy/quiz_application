@@ -1,5 +1,7 @@
 body {
   background-color: rgb(102, 35, 35);
+  background-image: url("https://image.freepik.com/free-vector/cartoon-stone-texture_1110-576.jpg");
+  background-size: 20%;
   margin: 0;
   max-height: 100vh;
   overflow: hidden;
@@ -14,18 +16,24 @@ body #root .container {
   align-content: center;
 }
 body #root .container .element {
+  box-shadow: 4px 3px 15px 5px black;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/381f5a63791945.5abc4ccf1297d.png");
+  background-size: 60%;
   z-index: 0;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 150px;
+  min-height: 150px;
   width: 100px;
+  color: whitesmoke;
   background-color: antiquewhite;
   border-radius: 30px;
 }
 body #root .container .element p {
+  font-size: 19px;
+  font-family: Monaco, fantasy;
   margin: 0;
 }
 body #root .container .element .box {
@@ -34,19 +42,24 @@ body #root .container .element .box {
   background-color: #ee1c1c;
 }
 body h1 {
+  box-shadow: -3px 16px 20px 20px black;
+  background: none;
+  font-size: 40px;
   text-align: center;
   color: wheat;
+  -webkit-text-stroke: 2px whitesmoke;
   height: 5vh;
 }
-.navbar {
-  z-index: 2;
-  width: 100vw;
-  height: 5vh;
-  background-color: black;
-}
+.navbar,
 .footer {
   z-index: 2;
   width: 100vw;
-  height: 10vh;
+  height: 5vh;
+  background-image: url("https://image.freepik.com/free-vector/cartoon-stone-texture-brown-colors-seamless-background_172107-380.jpg");
+  background-size: 10%;
   background-color: black;
+  box-shadow: inset 1px 5px 20px 11px black;
+}
+.footer {
+  height: 10vh;
 }

@@ -9,6 +9,7 @@ class Element extends Component {
     this.setState({ top: `${top}px`, transform: `rotateY(${top}deg)` });
   };
   render() {
+    console.log(this.props);
     return (
       <div
         style={{ top: this.state.top, transform: this.state.transform }}
@@ -16,9 +17,19 @@ class Element extends Component {
         onClick={this.props.clickFunction}
         className={"element"}
       >
-        <p>{this.props.title}</p>
-        <div className={"box"} />
-        <span>text</span>
+        <p>{this.props.answer.title}</p>
+        <div
+          className={"box"}
+          style={
+            this.props.answer.photo
+              ? {
+                  backgroundImage: `url(${this.props.answer.photo})`,
+                  backgroundSize: "100%",
+                }
+              : {}
+          }
+        />
+        <span>{this.props.answer.description}</span>
       </div>
     );
   }

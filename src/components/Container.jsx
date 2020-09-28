@@ -14,7 +14,6 @@ fetch(`${window.location.href.replace("quest", "data")}`)
     console.error(error);
     json = undefined;
   });
-console.log(json);
 class Container extends Component {
   state = {
     renderChildes: true,
@@ -56,6 +55,8 @@ class Container extends Component {
     }
   };
   render() {
+    console.log(data);
+    console.log(this.data.questions[this.current].answers);
     return (
       <>
         <h1>
@@ -78,7 +79,7 @@ class Container extends Component {
                         this.moveDown(index);
                       }
                     }}
-                    title={answer}
+                    answer={answer}
                     top={this.level}
                   />
                 );

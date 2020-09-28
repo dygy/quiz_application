@@ -2,11 +2,43 @@
   "questions": [
     {
       "title": "question first",
-      "answers": ["answer", "me", "snake"]
+      "answers": [
+        {
+          "title": "answer",
+          "photo": "https://pbs.twimg.com/profile_images/473506797462896640/_M0JJ0v8.png",
+          "description": "my text"
+        },
+        {
+          "title": "me",
+          "photo": "https://pbs.twimg.com/profile_images/473506797462896640/_M0JJ0v8.png",
+          "description": "my text"
+        },
+        {
+          "title": "snake",
+          "photo": "https://pbs.twimg.com/profile_images/473506797462896640/_M0JJ0v8.png",
+          "description": "my text"
+        }
+      ]
     },
     {
       "title": "question second",
-      "answers": ["answer", "me", "snake"]
+      "answers": [
+        {
+          "title": "answer",
+          "photo": "https://pbs.twimg.com/profile_images/473506797462896640/_M0JJ0v8.png",
+          "description": "my text"
+        },
+        {
+          "title": "me",
+          "photo": "https://pbs.twimg.com/profile_images/473506797462896640/_M0JJ0v8.png",
+          "description": "my text"
+        },
+        {
+          "title": "snake",
+          "photo": "https://pbs.twimg.com/profile_images/473506797462896640/_M0JJ0v8.png",
+          "description": "my text"
+        }
+      ]
     }
   ]
 }
