@@ -1,7 +1,8 @@
 # react-sample
 
 * send POST request to origin with this object  
-```{
+```
+{
   questions": [
     {
       "title": "title of first question",
