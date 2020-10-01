@@ -69,7 +69,7 @@ class Container extends Component {
                 this.childes.push(ref);
                 return (
                   <Element
-                    id={index}
+                    key={index}
                     ref={ref}
                     clickFunction={() => {
                       if (this.level === 0) {
