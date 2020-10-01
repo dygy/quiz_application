@@ -9,7 +9,6 @@ class Element extends Component {
     this.setState({ top: `${top}px`, transform: `rotateY(${top}deg)` });
   };
   render() {
-    console.log(this.props);
     return (
       <div
         style={{ top: this.state.top, transform: this.state.transform }}

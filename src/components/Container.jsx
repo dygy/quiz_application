@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Element from "./Element.jsx";
 import data from "../data/questions.json";
-console.log(json);
 let json;
 fetch(`${window.location.href.replace("quest", "data")}`)
   .then((value) => {
@@ -55,8 +54,6 @@ class Container extends Component {
     }
   };
   render() {
-    console.log(data);
-    console.log(this.data.questions[this.current].answers);
     return (
       <>
         <h1>
