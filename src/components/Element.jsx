@@ -5,9 +5,6 @@ class Element extends Component {
     top: "0px",
     transform: "rotateY(0deg)",
   };
-  move = (top) => {
-    this.setState({ top: `${top}px`, transform: `rotateY(${top}deg)` });
-  };
   render() {
     return (
       <div

@@ -26,7 +26,14 @@ class Container extends Component {
     this.level -= 15;
     this.childes.forEach((elem, i) => {
       if (elem.current) {
-        elem.current.move(index === i ? this.level * -1 : this.level);
+        elem.current.setState(
+          index === i
+            ? {
+                top: `${this.level * -1}px`,
+                transform: `rotateY(${this.level * -1}deg)`,
+              }
+            : { top: `${this.level}px`, transform: `rotateY(${this.level}deg)` }
+        );
       } else {
         this.level = -500;
       }
